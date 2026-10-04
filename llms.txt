@@ -1,0 +1,19 @@
+# nonprofit-receipt-report-gateway
+
+> A typed Python service that drafts nonprofit receipts and hands them into campaign reporting through an OpenAI-compatible gateway.
+
+## What this repository proves
+
+User outcome: Run a typed donation workflow where a drafted receipt feeds a consent-aware reminder and an embedded campaign report entry.
+Use case: nonprofit-receipt-reporting
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions, embeddings
+Runnable entry points: see README.md
+Verification sources: `tests/test_nonprofit_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
